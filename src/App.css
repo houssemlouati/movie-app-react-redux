@@ -1,38 +1,93 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+  border: 1px solid black;
+  width: 224px;
+  height: 500px;
+  margin: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 50px;
+}
+.card-img-top{
+  width: 224px;
+  height: 340px;
+}
+.card-body{
+  height: 15px;
+}
+.filter-container{
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.form-container{
+  flex:2;
+  padding-left: 50px;
+}
+.filer-rate{
+  flex:1;
+}
+.movieRating{
+  cursor: pointer;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-sub {
+  width: 100%;
+  background-color: #4CAF50;
   color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.input-sub:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} */
+.btn-modal{
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: rgb(233, 230, 225);
+}
+.modall{
+      position: absolute;
+    top: 40px;
+    left: 255px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+  width: 800px;
+  height: 440px;
+}
+.img-plus{
+  width: 180px;
+  height: 180px;
 }
